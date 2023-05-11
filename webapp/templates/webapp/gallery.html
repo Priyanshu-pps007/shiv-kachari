@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% block content %}
+  
+<style>
+  *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  
+}
+
+
+
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--7 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 18;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+.gallery__item--8 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 9;
+  grid-row-end: 18;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+.gallery__item--9 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 18;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+</style>
+
+
+
+
+<div class="container">
+  <div class="gallery">
+      <figure class="gallery__item gallery__item--1">
+         <a href="static/webapp/img.jpg"> <img src="static/webapp/img.jpg" alt="Gallery image 1" class="gallery__img"> </a>
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <a href="static/webapp/IMG_20211102_202427.jpg">  <img src="static/webapp/IMG_20211102_202427.jpg" alt="Gallery image 2" class="gallery__img"> </a>
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+         <a href="static/webapp/IMG_20211224_124121.jpg"> <img src="static/webapp/IMG_20211224_124121.jpg" alt="Gallery image 3" class="gallery__img"> </a>
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <a href="static/webapp/IMG_20230215_160238.jpg">  <img src="static/webapp/IMG_20230215_160238.jpg" alt="Gallery image 4" class="gallery__img"> </a>
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+        <a href="static/webapp/IMG_20230215_160246.jpg">  <img src="static/webapp/IMG_20230215_160246.jpg" alt="Gallery image 5" class="gallery__img"> </a>
+      </figure>
+      <figure class="gallery__item gallery__item--6">
+        <a href="static/webapp/IMG_20230428_113030.jpg">  <img src="static/webapp/IMG_20230428_113030.jpg" alt="Gallery image 6" class="gallery__img"> </a>
+      </figure>
+      <figure class="gallery__item gallery__item--7">
+       <a href="static/webapp/IMG_20230218_092928.jpg"> <img src="static/webapp/IMG_20230218_092928.jpg" alt="Gallery image 1" class="gallery__img"> </a>
+    </figure>
+    <figure class="gallery__item gallery__item--8">
+    <a href="static/webapp/IMG_20230218_092950.jpg">  <img src="static/webapp/IMG_20230218_092950.jpg" alt="Gallery image 1" class="gallery__img"> </a>
+  </figure>
+  <figure class="gallery__item gallery__item--9">
+   <a href="static/webapp/IMG_20230218_142943.jpg"> <img src="static/webapp/IMG_20230218_142943.jpg" alt="Gallery image 1" class="gallery__img"> </a>
+</figure>
+  </div>
+</div>
+
+{% endblock content %}
