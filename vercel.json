@@ -9,8 +9,8 @@
     ],
     "routes": [
     {
-    "src": "/static/webapp/(.*)",
-    "dest": "webapp/static/webapp/$1"
+    "src": "/static/(.*)",
+    "dest": "/webapp/static/webapp/$1"
     },
     {
     "src": "/(.*)",
