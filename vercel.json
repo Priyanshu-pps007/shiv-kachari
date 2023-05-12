@@ -14,7 +14,7 @@
     },
     {
     "src": "/(.*)",
-    "dest": "webapp/wsgi.py"
+    "dest": "shiv/wsgi.py"
     }
     ]
     }
