@@ -9,10 +9,6 @@
     ],
     "routes": [
     {
-    "src": "/webapp/static/webapp/(.*)",
-    "dest": "/static/$1"
-    },
-    {
     "src": "/(.*)",
     "dest": "shiv/wsgi.py"
     }
