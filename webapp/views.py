@@ -13,3 +13,5 @@ def maps(request):
     return render(request,'webapp/map.html')
 def about(request):
     return render(request,'webapp/about.html')
+def sitemap(request):
+    return render(request,'webapp/sitemap.xml')
